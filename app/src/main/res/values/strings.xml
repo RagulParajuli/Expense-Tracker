@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="expenseTracker"> Expense Tracker</string>
+    <string name="introText3">that</string>
+    <string name="introText4">works for you</string>
+    <string name="introText5">Track all your expenses here...</string>
+    <string name="getStarted"> Get Started</string>
+    <string name="facebook_button_desc">facebook_button_desc</string>
+    <string name="google_button_desc">google_button_desc</string>
+    <string name="addExpense">Add Expense</string>">
+    <string name="category">Categories</string>">
+
+    <!-- Navigation strings -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus dui nec risus.</string>
+</resources>

@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Black Circle Background -->
+    <item android:drawable="@drawable/black_circle" />
+    <!-- Orange Arrow Centered -->
+    <item
+        android:drawable="@drawable/orange_arrow"
+        android:gravity="center" />
+</layer-list>
