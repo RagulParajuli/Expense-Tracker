@@ -38,4 +38,6 @@
     -DI: Dagger Hilt (or equivalent) to decouple components and support testability 
     -Concurrency: Coroutines + StateFlow / Flow for reactive state management.
 
-Sample Screenshots or UI Mockups
+## Sample Screenshots or UI Mockups
+<img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/60a590cb-2800-45f0-aa81-e0f55539baab" />
+
