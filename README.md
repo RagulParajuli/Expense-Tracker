@@ -1,42 +1,48 @@
 ### Here's a breakdown of your Jetpack Compose Android Expense Tracker project in bullet points:
 
 ## App Initialization & Architecture
-    -Built in Kotlin with Jetpack Compose, following modern Android app standards.
-    -Adopts MVVM or Clean / Domain‑layer architecture with ViewModel, use cases, repository, and DI using Hilt or Koin 
-    -Persists local data with Room Database, allowing fully offline usage 
-    -Manages async data flows using Kotlin Coroutines and Flow / StateFlow 
+        -The app is built using Kotlin with XML-based layouts.
+        -Follows MVVM architecture with clear separation between UI (Activity/Fragment), data (Room), and business logic (ViewModel).
+        -Uses Room Database for local data persistence of expense entries.
+        -LiveData and ViewModel are used to observe and reactively update UI when data changes.
 
 ## Home / Dashboard Screen
-    -Displays a list of user expenses, grouped by date or category, using a LazyColumn or equivalent Compose list.
-    -Provides a quick overview of total expenses per category and date; may include summary stats on spending 
-    -Offers navigation to add, edit, or delete an expense entry.
+    *Displays a list of expenses using RecyclerView.
+    *Shows each expense entry with:
+        -Amount
+        -Category (e.g. Food, Transport)
+        -Date
+        -Description or note
+    *Includes a FloatingActionButton (FAB) to add new expenses.
+    *Uses a Room database to retrieve and display all stored expenses in real time.
 
-## Add / Edit Expense Screen
-    -Allows users to add new expenses with fields: amount, category (e.g. Food, Travel), date, optional notes.
-    -Supports editing and removing existing entries.
-    -Includes input validation (e.g. non-zero amount, category selection).
+## Add Expense:
+    *A separate activity or dialog opens when user clicks on the FAB.
+    *Input fields allow the user to:
+        -Enter amount
+        -Select category from dropdown/spinner
+        -Pick date using a DatePickerDialog
+        -Enter a description or note
+    *Input validation ensures fields are not empty or invalid before saving.
+    *On save, the data is inserted into the Room database and reflected immediately on the home screen.
 
-## Stats & Visualization
-    -Presents visual analytics of spending via bar charts, pie charts, or date-based summaries.
-    -Charts are rendered with Compose–compatible libraries or custom Canvas APIs 
-    -Summarizes spending habits — total outlay, category breakdown, trends over time.
+## Edit & Delete Expense:
+    *Tapping an existing expense opens it for editing.
+    *Users can:
+        -Update amount, category, or date
+        -Delete the expense entry permanently
+    *Changes are saved back to the Room database using DAO methods.
 
-## Navigation
-    -Manages app navigation using Compose Navigation (NavHost / NavController).
-    -Defines a navigation graph for smooth transitions between Home, Add/Edit screens, and Stats view 
+## Summary & Statistics (Optional or Planned):
+    *May include a summary section showing:
+        -Total spending
+        -Spending by category
+        -Monthly breakdown
+    *Optionally could use PieChart or BarChart (MPAndroidChart) to visualize data.
 
-## Additional Features & Settings
-    -Allows filtering or sorting expenses by date, amount, or category.
-    -Persist user settings using Room or DataStore (e.g. default currency, theme) 
-    -Optional settings view for configuring preferences or clearing data.
-
-## Technical Stack Summary
-    -UI: Jetpack Compose, Material3 for modern and responsive design.
-    -Local data: Room Database for structured offline storage.
-    -Architecture: MVVM, optionally Clean Architecture layers.
-    -Networking: none required—data lives locally.
-    -DI: Dagger Hilt (or equivalent) to decouple components and support testability 
-    -Concurrency: Coroutines + StateFlow / Flow for reactive state management.
+## Navigation:
+    -Basic navigation between activities is handled using explicit Intents.
+    -UI flow: MainActivity ↔ AddExpenseActivity ↔ EditExpenseActivity (if implemented).
 
 ## Sample Screenshots or UI Mockups
 <img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/b87ee40a-293a-4d43-87a0-e1da5ea58f72" />
