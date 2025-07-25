@@ -1,10 +1,10 @@
 ### Here's a breakdown of your Jetpack Compose Android Expense Tracker project in bullet points:
 
 ## App Initialization & Architecture
-    Built in Kotlin with Jetpack Compose, following modern Android app standards.
-    Adopts MVVM or Clean / Domain‑layer architecture with ViewModel, use cases, repository, and DI using Hilt or Koin 
-    Persists local data with Room Database, allowing fully offline usage 
-    Manages async data flows using Kotlin Coroutines and Flow / StateFlow 
+    -Built in Kotlin with Jetpack Compose, following modern Android app standards.
+    -Adopts MVVM or Clean / Domain‑layer architecture with ViewModel, use cases, repository, and DI using Hilt or Koin 
+    -Persists local data with Room Database, allowing fully offline usage 
+    -Manages async data flows using Kotlin Coroutines and Flow / StateFlow 
 
 ## Home / Dashboard Screen
     Displays a list of user expenses, grouped by date or category, using a LazyColumn or equivalent Compose list.
