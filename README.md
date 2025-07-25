@@ -39,7 +39,9 @@
     -Concurrency: Coroutines + StateFlow / Flow for reactive state management.
 
 ## Sample Screenshots or UI Mockups
-![WhatsApp Image 2025-07-25 at 22 44 58_7b34c0ac](https://github.com/user-attachments/assets/f989e97f-70c2-47b5-b78f-72f95d1b5845)
-
+<img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/b87ee40a-293a-4d43-87a0-e1da5ea58f72" />
+<img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/dc56b30c-2ff0-4064-938b-c0779c97ea89" />
+<img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/ad1a665f-a055-412c-8d44-1f5865d81971" />
+<img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/cfbc5c78-d6b1-4e67-b0bc-f979635b7535" />
+<img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/1a1717e0-df8d-4131-bf47-96717eefcb65" />
 <img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/60a590cb-2800-45f0-aa81-e0f55539baab" />
-
