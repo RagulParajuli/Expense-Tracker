@@ -74,12 +74,6 @@ A modern Android application built with Kotlin to help users track and manage th
 - Export functionality for expense reports
 - Budget setting and tracking
 
-## Development Setup
-1. Clone the repository
-2. Open in Android Studio
-3. Sync Gradle files
-4. Run on an Android device or emulator
-
 ## Sample Screenshots or UI Mockups
 <img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/b87ee40a-293a-4d43-87a0-e1da5ea58f72" />
 <img width="355" height="619" alt="image" src="https://github.com/user-attachments/assets/dc56b30c-2ff0-4064-938b-c0779c97ea89" />
