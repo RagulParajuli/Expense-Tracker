@@ -3,8 +3,6 @@
 ## App Initialization & Architecture
         -The app is built using Kotlin with XML-based layouts.
         -Follows MVVM architecture with clear separation between UI (Activity/Fragment), data (Room), and business logic (ViewModel).
-        -Uses Room Database for local data persistence of expense entries.
-        -LiveData and ViewModel are used to observe and reactively update UI when data changes.
 
 ## Home / Dashboard Screen
     *Displays a list of expenses using RecyclerView.
